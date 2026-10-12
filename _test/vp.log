@@ -1,0 +1,65 @@
+FAIL home@320 [
+ "H-OVERFLOW 21px: DIV.flex items-center gap-space-md right=405 | BUTTON.lg:hidden inline-flex items-center justify-center p-space-xs rounded-lg text-on- right=405 | SPAN.material-symbols-outlined text-[26px] right=401 | DIV.absolute top-1/4 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-primary-contai right=485 | DIV.absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] p right=448"
+]
+FAIL home@375 [
+ "H-OVERFLOW 7px: DIV.flex items-center gap-space-md right=405 | BUTTON.lg:hidden inline-flex items-center justify-center p-space-xs rounded-lg text-on- right=405 | SPAN.material-symbols-outlined text-[26px] right=401 | DIV.absolute top-1/4 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-primary-contai right=513 | DIV.absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] p right=503"
+]
+PASS home@414 active=Home(home.html) scrollW=414 clientW=414
+PASS home@480 active=Home(home.html) scrollW=480 clientW=480
+FAIL home@640 [
+ "H-OVERFLOW 49px: DIV.absolute top-1/4 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-primary-contai right=645 | DIV.absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] p right=768 | SPAN.material-symbols-outlined right=689 | DIV.min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden b right=660 | DIV.relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-spac right=651"
+]
+FAIL home@768 [
+ "H-OVERFLOW 33px: DIV.absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] p right=896 | A.inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-prim right=787 | SPAN. right=771 | SPAN.material-symbols-outlined right=801 | DIV.min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden b right=1010"
+]
+FAIL home@1024 [
+ "H-OVERFLOW 33px: DIV.absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] p right=1152 | SPAN.material-symbols-outlined right=1057 | DIV.min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden b right=1344 | DIV.relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-spac right=1335 | SPAN.absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-error-container text-on-error- right=1141"
+]
+FAIL home@1280 [
+ "H-OVERFLOW 33px: DIV.absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] p right=1408 | SPAN.material-symbols-outlined right=1313 | DIV.min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden b right=1344 | DIV.relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-spac right=1335 | IMG.w-full h-full object-cover group-hover:scale-105 transition-transform duration-5 right=1335"
+]
+FAIL home@1366 [
+ "H-OVERFLOW 30px: DIV.absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] p right=1494 | SPAN.material-symbols-outlined right=1396 | DIV.min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden b right=1681 | DIV.relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-spac right=1672 | SPAN.absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-surface-container-lowest/80 te right=1481"
+]
+PASS home@1440 active=Home(home.html) scrollW=1440 clientW=1440
+PASS home@1920 active=Home(home.html) scrollW=1920 clientW=1920
+PASS home@2560 active=Home(home.html) scrollW=2560 clientW=2560
+PASS about@320 active=About(about.html) scrollW=320 clientW=320
+PASS about@375 active=About(about.html) scrollW=375 clientW=375
+PASS about@414 active=About(about.html) scrollW=414 clientW=414
+PASS about@480 active=About(about.html) scrollW=480 clientW=480
+PASS about@640 active=About(about.html) scrollW=640 clientW=640
+PASS about@768 active=About(about.html) scrollW=768 clientW=768
+PASS about@1024 active=About(about.html) scrollW=1024 clientW=1024
+PASS about@1280 active=About(about.html) scrollW=1280 clientW=1280
+PASS about@1366 active=About(about.html) scrollW=1366 clientW=1366
+PASS about@1440 active=About(about.html) scrollW=1440 clientW=1440
+PASS about@1920 active=About(about.html) scrollW=1920 clientW=1920
+PASS about@2560 active=About(about.html) scrollW=2560 clientW=2560
+PASS contact@320 active=Contact(contact.html) scrollW=320 clientW=320
+PASS contact@375 active=Contact(contact.html) scrollW=375 clientW=375
+PASS contact@414 active=Contact(contact.html) scrollW=414 clientW=414
+PASS contact@480 active=Contact(contact.html) scrollW=480 clientW=480
+PASS contact@640 active=Contact(contact.html) scrollW=640 clientW=640
+PASS contact@768 active=Contact(contact.html) scrollW=768 clientW=768
+PASS contact@1024 active=Contact(contact.html) scrollW=1024 clientW=1024
+PASS contact@1280 active=Contact(contact.html) scrollW=1280 clientW=1280
+PASS contact@1366 active=Contact(contact.html) scrollW=1366 clientW=1366
+PASS contact@1440 active=Contact(contact.html) scrollW=1440 clientW=1440
+PASS contact@1920 active=Contact(contact.html) scrollW=1920 clientW=1920
+PASS contact@2560 active=Contact(contact.html) scrollW=2560 clientW=2560
+PASS fullmenu@320 active=Menu(fullmenu.html) scrollW=320 clientW=320
+PASS fullmenu@375 active=Menu(fullmenu.html) scrollW=375 clientW=375
+PASS fullmenu@414 active=Menu(fullmenu.html) scrollW=414 clientW=414
+PASS fullmenu@480 active=Menu(fullmenu.html) scrollW=480 clientW=480
+PASS fullmenu@640 active=Menu(fullmenu.html) scrollW=640 clientW=640
+PASS fullmenu@768 active=Menu(fullmenu.html) scrollW=768 clientW=768
+PASS fullmenu@1024 active=Menu(fullmenu.html) scrollW=1024 clientW=1024
+PASS fullmenu@1280 active=Menu(fullmenu.html) scrollW=1280 clientW=1280
+PASS fullmenu@1366 active=Menu(fullmenu.html) scrollW=1366 clientW=1366
+PASS fullmenu@1440 active=Menu(fullmenu.html) scrollW=1440 clientW=1440
+PASS fullmenu@1920 active=Menu(fullmenu.html) scrollW=1920 clientW=1920
+PASS fullmenu@2560 active=Menu(fullmenu.html) scrollW=2560 clientW=2560
+
+=== VIEWPORT SUMMARY ===
+Failures: 7

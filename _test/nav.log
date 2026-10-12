@@ -1,0 +1,73 @@
+=== STATIC NAVBAR CHECKS ===
+PASS home.html: navbar has no shopping_bag text 
+PASS home.html: navbar has no cart-count badge 
+PASS home.html: navbar has no Open cart button 
+PASS about.html: navbar has no shopping_bag text 
+PASS about.html: navbar has no cart-count badge 
+PASS about.html: navbar has no Open cart button 
+PASS contact.html: navbar has no shopping_bag text 
+PASS contact.html: navbar has no cart-count badge 
+PASS contact.html: navbar has no Open cart button 
+PASS fullmenu.html: navbar has no shopping_bag text 
+PASS fullmenu.html: navbar has no cart-count badge 
+PASS fullmenu.html: navbar has no Open cart button 
+
+=== RENDERED NAVBAR CHECKS (1440px) ===
+PASS home.html: nav links = [Home, Menu, Deals, Cakes & Sweets, About, Contact] ["Home","Menu","Deals","Cakes & Sweets","About","Contact"]
+PASS home.html: no visible shopping_bag text in navbar 
+PASS home.html: no visible cart badge in navbar 
+PASS home.html: logo shows A-One Foods A-One Foods
+When You Want To Eat
+    home.html active: Home
+PASS about.html: nav links = [Home, Menu, Deals, Cakes & Sweets, About, Contact] ["Home","Menu","Deals","Cakes & Sweets","About","Contact"]
+PASS about.html: no visible shopping_bag text in navbar 
+PASS about.html: no visible cart badge in navbar 
+PASS about.html: logo shows A-One Foods A-One Foods
+When You Want To Eat
+    about.html active: About
+PASS contact.html: nav links = [Home, Menu, Deals, Cakes & Sweets, About, Contact] ["Home","Menu","Deals","Cakes & Sweets","About","Contact"]
+PASS contact.html: no visible shopping_bag text in navbar 
+PASS contact.html: no visible cart badge in navbar 
+PASS contact.html: logo shows A-One Foods A-One Foods
+When You Want To Eat
+    contact.html active: Contact
+PASS fullmenu.html: nav links = [Home, Menu, Deals, Cakes & Sweets, About, Contact] ["Home","Menu","Deals","Cakes & Sweets","About","Contact"]
+PASS fullmenu.html: no visible shopping_bag text in navbar 
+PASS fullmenu.html: no visible cart badge in navbar 
+PASS fullmenu.html: logo shows A-One Foods A-One Foods
+When You Want To Eat
+    fullmenu.html active: Menu
+
+=== MOBILE NAVBAR CHECKS (375px) ===
+PASS home.html: hamburger visible at 375px 
+PASS home.html: no horizontal overflow at 375px overflow=0
+PASS home.html: no shopping_bag text in mobile navbar 
+PASS home.html: mobile menu opens with 6 links + WhatsApp ["Home","Menu","Deals","Cakes & Sweets","About","Contact","chat\nOrder on WhatsApp"]
+PASS about.html: hamburger visible at 375px 
+PASS about.html: no horizontal overflow at 375px overflow=0
+PASS about.html: no shopping_bag text in mobile navbar 
+PASS about.html: mobile menu opens with 6 links + WhatsApp ["Home","Menu","Deals","Cakes & Sweets","About","Contact","chat\nOrder on WhatsApp"]
+PASS contact.html: hamburger visible at 375px 
+PASS contact.html: no horizontal overflow at 375px overflow=0
+PASS contact.html: no shopping_bag text in mobile navbar 
+PASS contact.html: mobile menu opens with 6 links + WhatsApp ["Home","Menu","Deals","Cakes & Sweets","About","Contact","chat\nOrder on WhatsApp"]
+PASS fullmenu.html: hamburger visible at 375px 
+PASS fullmenu.html: no horizontal overflow at 375px overflow=0
+PASS fullmenu.html: no shopping_bag text in mobile navbar 
+PASS fullmenu.html: mobile menu opens with 6 links + WhatsApp ["Home","Menu","Deals","Cakes & Sweets","About","Contact","chat\nOrder on WhatsApp"]
+
+=== INDEX ENTRY POINT CHECK ===
+PASS index.html redirects to home.html (meta + js) 
+PASS root index.html opens home.html content final=/D:/aonefood/home.html
+
+=== FUNCTIONAL CART REGRESSION ===
+PASS fullmenu floating cart still works {"barVisible":true,"items":1,"badgeWorks":true}
+PASS fullmenu cart count badge element preserved 
+
+=== NAVBAR CONSISTENCY ===
+PASS home.html: navbar identical to contact.html except active link 
+PASS about.html: navbar identical to contact.html except active link 
+PASS fullmenu.html: navbar identical to contact.html except active link 
+
+=== SUMMARY ===
+Failures: 0

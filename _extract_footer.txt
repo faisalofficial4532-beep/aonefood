@@ -1,0 +1,91 @@
+﻿<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 text-on-surface-variant pt-space-xl pb-space-lg">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="A-One Foods Chicken Emblem.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WjwaRNskSPd1Vee3XlamUkuvRA7eCM6xjSE-lSbDjKrBt_dIW6ojGS_2ytbTCpi9gMYaxyB7E_97tu0dw1V-NAzXelPCyv8j1a6-4ycNLsfsD1Xvxy4iskNixCjRYttT7TBW0KaTjaPR02X5oPrReLkdx_fFZPH1jXQobVG2XIvaQq0zUq14VJMMyTCdZo0bX944furweGu9psgUj8Np3OsdEGmgixBQJoDn5Jf9ffqvWSsbGKpmtr3M0ibYZ9FidBWzoMYaOvLQ">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">A-One Foods</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-secondary italic">"When You Want To Eat"</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Crafting unforgettable nocturnal culinary experiences in Faisalabad with hand-roasted spices, golden crispy chicken, and artisan confectioneries.</p>
+<div class="inline-flex items-center gap-space-xs mt-space-sm px-space-sm py-space-xs rounded bg-surface-container-high border border-outline-variant/40 w-fit">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">100% Halal Certified</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Quick Links</h4>
+<ul class="flex flex-col gap-space-xs">
+<li class="font-body-md text-body-md">
+<a class="hover:text-primary transition-colors" href="#">Chef's Signature Menu</a>
+</li>
+<li class="font-body-md text-body-md">
+<a class="hover:text-primary transition-colors" href="#">Exclusive Family Deals</a>
+</li>
+<li class="font-body-md text-body-md">
+<a class="hover:text-primary transition-colors" href="#">Artisan Cakes &amp; Sweets</a>
+</li>
+<li class="font-body-md text-body-md">
+<a class="hover:text-primary transition-colors" href="#">Our Heritage &amp; Craft</a>
+</li>
+<li class="font-body-md text-body-md">
+<a class="hover:text-primary transition-colors" href="#">Direct Support &amp; Inquiries</a>
+</li>
+</ul>
+</div>
+<div class="flex flex-col gap-space-sm">
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Visit &amp; Timing</h4>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Store Timings</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Open Daily: 11:00 AM â€“ 3:00 AM</p>
+<p class="font-body-sm text-body-sm text-secondary">Late Night Takeaway &amp; Delivery</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs mt-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Flagship Location</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Main Boulevard, Faisalabad, Pakistan</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Ordering Hotline</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Instant dispatch and bespoke catering orders via WhatsApp hotline.</p>
+<a class="inline-flex items-center gap-space-xs text-primary font-title-lg text-title-lg hover:underline" href="https://wa.me/">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span class="">+92 300 1234567</span>
+</a>
+<div class="mt-space-sm">
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-space-xs">Connect With Us</p>
+<div class="flex items-center gap-space-sm">
+<a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a aria-label="TikTok" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">music_note</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Â© 2025 A-One Foods. All rights reserved. Faisalabad, Pakistan.</p>
+<div class="flex items-center gap-space-md font-body-sm text-body-sm">
+<a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-on-surface transition-colors" href="#">FSSAI &amp; Halal Standards</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

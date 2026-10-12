@@ -1,0 +1,872 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" class=""><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed":"#ffdea7","tertiary-fixed":"#ffdad6","inverse-primary":"#9f4100","on-primary-container":"#4f1d00","on-secondary-fixed-variant":"#5e4200","primary-fixed-dim":"#ffb692","primary-fixed":"#ffdbcb","on-tertiary-fixed-variant":"#93000d","secondary-fixed-dim":"#f4be55","surface-container-low":"#1f1b17","on-error":"#690005","surface-container-high":"#2e2926","on-primary-fixed":"#341000","inverse-surface":"#ebe1db","on-primary-fixed-variant":"#7a3000","background":"#171310","on-tertiary-fixed":"#410002","tertiary-container":"#ff5a50","on-error-container":"#ffdad6","surface-dim":"#171310","on-secondary":"#412d00","tertiary-fixed-dim":"#ffb4ab","tertiary":"#ffb4ab","secondary-container":"#986d00","outline":"#a88b7d","error-container":"#93000a","primary-container":"#f26a0f","on-secondary-fixed":"#271900","outline-variant":"#594237","surface-container-highest":"#393430","on-background":"#ebe1db","error":"#ffb4ab","on-secondary-container":"#fffbff","surface":"#171310","on-tertiary-container":"#600005","surface-variant":"#393430","on-surface":"#ebe1db","secondary":"#f4be55","surface-container-lowest":"#110d0a","on-primary":"#562000","on-surface-variant":"#e1c0b1","primary":"#ffb692","surface-container":"#231f1b","surface-tint":"#ffb692","surface-bright":"#3e3834","on-tertiary":"#690006","inverse-on-surface":"#352f2c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-xl":"2.5rem","space-md":"1rem"},"fontFamily":{"headline-md":["Playfair Display"],"body-md":["Inter"],"title-lg":["Inter"],"headline-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"display-hero":["Playfair Display"],"title-md":["Inter"],"display-hero-mobile":["Playfair Display"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-lg":["Playfair Display"],"label-md":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"0.005em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"0em","fontWeight":"600"}],"headline-sm":["22px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"><style>*, body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, [class*="font-serif"], [class*="font-sans"], .font-display-hero, .font-headline-lg, .font-headline-md, .font-headline-sm, .font-title-lg, .font-title-md, .font-body-lg, .font-body-md, .font-body-sm, .font-label-md, .font-label-sm { font-family: 'Poppins', sans-serif !important; }</style><style>
+/* Shared responsive helpers - identical on every page */
+.material-symbols-outlined { font-family: 'Material Symbols Outlined' !important; font-weight: normal; font-style: normal; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: 'liga'; font-feature-settings: 'liga'; width: 1em; overflow: hidden; }
+section[id], [id^="section-"], #quick-menu, #catering-section, #heritage-story, #quick-inquiry, #faqAccordion { scroll-margin-top: 6.5rem; }
+</style></head><body class="bg-surface text-on-surface font-body-md text-body-md"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.25)]">
+<div class="h-20 max-w-[1360px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter">
+<a class="flex items-center gap-space-sm rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container" href="home.html" aria-label="A-One Foods — Go to Home page">
+<img alt="A-One Foods Chicken Emblem.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WjwaRNskSPd1Vee3XlamUkuvRA7eCM6xjSE-lSbDjKrBt_dIW6ojGS_2ytbTCpi9gMYaxyB7E_97tu0dw1V-NAzXelPCyv8j1a6-4ycNLsfsD1Xvxy4iskNixCjRYttT7TBW0KaTjaPR02X5oPrReLkdx_fFZPH1jXQobVG2XIvaQq0zUq14VJMMyTCdZo0bX944furweGu9psgUj8Np3OsdEGmgixBQJoDn5Jf9ffqvWSsbGKpmtr3M0ibYZ9FidBWzoMYaOvLQ">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-wide leading-none">A-One Foods</span>
+<span class="hidden sm:block font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-0.5">When You Want To Eat</span>
+</div>
+</a>
+<nav aria-label="Primary" class="hidden lg:flex items-center gap-space-lg">
+<a class="transition-colors text-primary font-bold" aria-current="page" data-path="home" href="home.html">Home</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="fullmenu.html">Menu</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="deals" href="fullmenu.html">Deals</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cakes-sweets" href="fullmenu.html#section-cakes-sweets">Cakes &amp; Sweets</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="about.html">About</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-space-md">
+<a class="hidden sm:inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim hover:text-on-primary-fixed font-title-md text-title-md px-space-md py-space-xs rounded-full shadow-[0_4px_16px_rgba(242,106,15,0.35)] transition-all" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">Order on WhatsApp</span>
+</a>
+<div class="hidden sm:flex w-8 h-8 rounded-full bg-primary items-center justify-center" aria-hidden="true">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+<button id="mobileNavToggle" class="lg:hidden inline-flex items-center justify-center p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNavMenu" aria-haspopup="true">
+<span class="material-symbols-outlined text-[26px]" id="mobileNavIcon" aria-hidden="true">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden lg:hidden border-t border-outline-variant/30 bg-surface-container-lowest/95 backdrop-blur-md" id="mobileNavMenu">
+<nav aria-label="Mobile" class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin py-space-sm flex flex-col gap-1">
+<a aria-current="page" class="font-title-md text-title-md px-space-sm py-2.5 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container text-primary font-bold bg-surface-container-high/60" href="home.html">Home</a>
+<a class="font-title-md text-title-md px-space-sm py-2.5 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" href="fullmenu.html">Menu</a>
+<a class="font-title-md text-title-md px-space-sm py-2.5 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" href="fullmenu.html">Deals</a>
+<a class="font-title-md text-title-md px-space-sm py-2.5 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" href="fullmenu.html#section-cakes-sweets">Cakes &amp; Sweets</a>
+<a class="font-title-md text-title-md px-space-sm py-2.5 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" href="about.html">About</a>
+<a class="font-title-md text-title-md px-space-sm py-2.5 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" href="contact.html">Contact</a>
+<a class="mt-1 mb-1 inline-flex items-center justify-center gap-space-xs bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim hover:text-on-primary-fixed font-title-md text-title-md px-space-md py-space-sm rounded-full shadow-[0_4px_16px_rgba(242,106,15,0.35)] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">Order on WhatsApp</span>
+</a>
+</nav>
+</div>
+</header><main class="w-full pt-20 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest pt-24 pb-space-xl md:pt-28 md:pb-space-xl">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-primary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Text Column -->
+<div class="lg:col-span-6 flex flex-col items-start gap-space-md">
+<!-- Artisanal Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high/90 border border-outline-variant/40 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Crafted Fresh in Faisalabad</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Night Owl Kitchen Till 3 AM</span>
+</div>
+<!-- Hero Display Title -->
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface font-bold tracking-tight leading-tight">
+            When You <br class="hidden sm:inline">
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-secondary">
+              Want To Eat.
+            </span>
+</h1>
+<!-- Compelling Lead Copy -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Savor the unforgettable crisp of our legendary Zinger burgers, authentic aromatic Dum Biryani, handcrafted artisanal stone-fired pizzas, and decadent celebratory confections.
+          </p>
+<!-- Dual Call to Actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-title-md text-title-md shadow-[0_10px_28px_rgba(242,106,15,0.38)] hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/923001234567?text=Hi%20A-One%20Foods,%20I%20would%20like%20to%20order%20now!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="">Order Now</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface border border-outline-variant/60 font-title-md text-title-md transition-all duration-300 backdrop-blur-sm" href="#quick-menu">
+<span class="material-symbols-outlined text-[20px] text-secondary">restaurant_menu</span>
+<span class="">Explore Menu</span>
+</a>
+</div>
+<!-- Proof Metrics -->
+<div class="grid grid-cols-3 gap-space-sm sm:gap-gutter pt-space-md mt-space-xs border-t border-outline-variant/30 w-full max-w-lg">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certified Halal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">30 Mins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Express City Dispatch</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">10k+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Happy Diners</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Showcase -->
+<div class="lg:col-span-6 relative flex items-center justify-center mt-space-lg lg:mt-0">
+<!-- Backlit Saffron Hearth Glow -->
+<div class="absolute inset-0 m-auto w-[320px] sm:w-[460px] h-[320px] sm:h-[460px] rounded-full bg-gradient-to-tr from-primary-container/30 to-secondary/20 blur-2xl -z-10"></div>
+<div class="relative w-full max-w-[540px] rounded-2xl overflow-hidden shadow-[0_24px_50px_rgba(0,0,0,0.65)] bg-surface-container border border-outline-variant/40 group">
+<img class="w-full h-[360px] sm:h-[440px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Gourmet double-crispy deep fried chicken zinger burger piled high with melted cheddar cheese dripping down onto crunchy lettuce on toasted brioche bun, presented on a dark slate board with crinkle-cut fries in a copper basket in warm moody charcoal restaurant lighting with ember tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGRRF3zZZ8eB4Zg2OYHjh6FRc1GlPZqBQ4Qi5G1dNHmPajC4zDpGm1tszcJSOe4GxHgsPDKrjwq-7dTuRU2cCphXnwgO4-BMSmRydtuIci6K60kDcqL6TwSp0DDiw6NEDpemIQaj5-k4Xn0dz1Huv6AlmobOojbAbtJrId2tWF8ZCo7EJdvqzP1OKlUZ44b4MxxgHT8AaK4MhoikJZwWgLer0YlZcDvcYdowD6WdBTJ47uArwkYAcO">
+<!-- Floating Glass Badges -->
+<div class="absolute top-space-md left-space-md inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest/85 backdrop-blur-md border border-outline-variant/50 shadow-lg">
+<span class="text-secondary font-bold text-sm">⭐ 4.9/5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(10k+ Foodies)</span>
+</div>
+<div class="absolute bottom-space-md right-space-md inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container/90 backdrop-blur-md border border-primary-fixed/40 text-on-primary-container shadow-xl">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span class="font-title-md text-title-md font-semibold">Crispy, Hot &amp; Fresh</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VALUE PROPOSITION STRIP -->
+<section class="w-full bg-surface-container border-y border-outline-variant/30 py-space-sm relative z-20">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm md:gap-gutter text-center divide-y md:divide-y-0 md:divide-x divide-outline-variant/25">
+<div class="flex items-center justify-center gap-space-xs py-space-xs px-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">access_time_filled</span>
+<span class="font-title-md text-title-md text-on-surface">Open Daily 11 AM - 3 AM</span>
+</div>
+<div class="flex items-center justify-center gap-space-xs py-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">two_wheeler</span>
+<span class="font-title-md text-title-md text-on-surface">Express Hot Delivery</span>
+</div>
+<div class="flex items-center justify-center gap-space-xs py-space-xs px-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified</span>
+<span class="font-title-md text-title-md text-on-surface">100% Certified Halal</span>
+</div>
+<div class="flex items-center justify-center gap-space-xs py-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">skillet</span>
+<span class="font-title-md text-title-md text-on-surface">Freshly Prepared to Order</span>
+</div>
+</div>
+</div>
+</section>
+<!-- EXCLUSIVE VALUE DEALS (SIGNATURE COMBOS) -->
+<section class="w-full bg-surface py-space-xl relative overflow-hidden">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Limited Time Combos</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">Exclusive Value Deals</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Signature combinations paired with iced drinks for unmatched Faisalabad late-night cravings.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Deal 1 -->
+<div class="relative bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/40 shadow-lg flex flex-col group hover:-translate-y-1 transition-all duration-300">
+<div class="absolute top-space-sm left-space-sm z-10 inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase shadow-md">
+            -15% OFF
+          </div>
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Two towering golden crispy zinger chicken burgers layered with melted cheese and fresh garlic mayo alongside a frosted cold soda bottle against deep dark charcoal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUvWAjhm6ZzMW5erlg1Udwr1SGsORzWrA4qpq8fTn68ceDECb0KYlLedHepP9ImPoO9x313gbGygBlndgsljep6fkIFxhq2YgY5nNCR0XgR5EGmH2ThhuKy2SfFLburyx8mJ0bWSamdajDg5E7ye45VNeKnUAP2TTflruHQm5Bc3uvjSZ_htT6s6uydP7c-xNzgtdVWpms8tXok5FEbJ-Xuh-SfoviFtAy857Z5eog1DmmRd6kMBWD">
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Combo Supreme</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rs. 1,000</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">2 Zinger Burgers + 0.5L Drink</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Double crunch legendary crispy fillets served with chilled refreshing soft drink.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-outline-variant/30">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 850</span>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim transition-colors font-title-md text-title-md" href="https://wa.me/923001234567?text=Order%20Deal%201%20(2%20Zingers%20+%200.5L%20Drink)" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span class="">Order Deal</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Deal 2 -->
+<div class="relative bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/40 shadow-lg flex flex-col group hover:-translate-y-1 transition-all duration-300">
+<div class="absolute top-space-sm left-space-sm z-10 inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase shadow-md">
+            -15% OFF
+          </div>
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal stone oven baked small chicken tikka pizza with stretchy mozzarella strings and grilled chicken cubes next to a 350ml cold drink on dark moody wooden backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA66AabZPJI4aOL89mD0EkgVw8CBvMVxBwzuZvnocTH40EllnPN4cdlwHLBRQ-Qbtl7U9F1EMeZzxb_v8SQm3t1MslI-_nGzUMIDTPoGg-zPKUo5dxJqaQkPEQmES1ze5IJg9EHGW0zVUaMtseVvSV32PnXnzue_sljTUi4IJCXNJJMkmKR9WCFQPASzzvSItE3A3CTWIHbppFPHbPCl_3_tCM-HtMOBawxpxPurH5j6KG-ddNeGA0">
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Oven Craft</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rs. 600</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Chicken Tikka Pizza + 350ml Drink</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Small stone-baked tikka pizza topped with fresh mozzarella, charred onions &amp; peppers.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-outline-variant/30">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 510</span>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim transition-colors font-title-md text-title-md" href="https://wa.me/923001234567?text=Order%20Deal%202%20(Small%20Chicken%20Tikka%20Pizza%20+%20Drink)" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span class="">Order Deal</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Deal 3 -->
+<div class="relative bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/40 shadow-lg flex flex-col group hover:-translate-y-1 transition-all duration-300">
+<div class="absolute top-space-sm left-space-sm z-10 inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase shadow-md">
+            -15% OFF
+          </div>
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Steaming hot plate of long grain aromatic basmati chicken biryani seasoned with saffron and caramelized onions alongside fresh raita and a 350ml drink on dark slate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChIRWEftl1rdpIMmFCOnQYpalann3eJxj_vHi0LNJBUAg2E5EF6yIDyuoJ30r4oPxT-MazmA6gydWCaB8_bCAQqi9zDh00ZTE2s9LK13DK9fMAeU4lk-Ju3woWzrx1pbtOp4O1WvaCX9pz3PpPRXLB8UschVjyJxv7SUaoUmSO4zmsoVQilWwln3tVjjOb18f5pM-3CRtg6zc7JUsTNKN-kWyuvCFskfjfQMKycYdX9nGlKVisVhIU">
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Heritage Rice</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rs. 520</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Chicken Biryani + 350ml Drink</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Aromatic long-grain basmati cooked with tender spiced chicken and authentic pot aromatics.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-outline-variant/30">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 442</span>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim transition-colors font-title-md text-title-md" href="https://wa.me/923001234567?text=Order%20Deal%203%20(Aromatic%20Chicken%20Biryani%20+%20Drink)" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span class="">Order Deal</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MOST ORDERED RIGHT NOW (CAROUSEL SHOWCASE) -->
+<section class="w-full bg-surface-container-lowest py-space-xl border-t border-outline-variant/20" id="quick-menu">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Live Kitchen Feed</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">Most Ordered Right Now</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Scroll left" class="w-10 h-10 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors border border-outline-variant/30" id="scrollLeftBtn" type="button">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button aria-label="Scroll right" class="w-10 h-10 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors border border-outline-variant/30" id="scrollRightBtn" type="button">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Track -->
+<div class="flex gap-gutter overflow-x-auto pb-space-sm scroll-smooth snap-x snap-mandatory" id="carouselTrack">
+<!-- Item 1: Chicken Pulao -->
+<div class="min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between p-space-sm snap-start group">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-sm text-label-sm backdrop-blur">Chef's Pick</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Pakistani Chicken Yakhni Pulao cooked in clarified butter with aromatic whole spices, served in a matte ceramic bowl on a dark dining table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_Emt-pCIwRpPdhenrbunE5o9cQiGUb6GlRhsgDwBWy4pe5g49IB3aNAhZuW0mev-Ume_bJFcbdnGtvEwnav_A8Hiu1vRqOVDwcrnTHyQpfs_7O8Xj2SN9hzJG7d--CVdhxmEpbs9BEv_gWi5B6XH5YZkQg277TY7_urbw5CDpvS2ugzJetkizl59v4Pt1D5jX4o5qucUcI5-j0ynlun4M6mgEwn9cLr-6JX10chyK4TVikKSsZTy6">
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Chicken Pulao</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Slow-cooked in aromatic yakhni broth with juicy chicken quarters.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 357</span>
+<button aria-label="Add Chicken Pulao to cart" class="add-to-cart-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors flex items-center justify-center" data-dish="Chicken Pulao" data-price="357">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Biryani Deal -->
+<div class="min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between p-space-sm snap-start group">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm">Best Seller</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Savory single-serving chicken biryani bowl paired with mint raita and fresh salad in an upscale dark-themed fast casual restaurant setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGRf_9Erq-h0TlTheSOTyDOEl9BZi3t2A-xqlNq06P1wXQbzVQBRG-h6Dh9cvr_ovjnw6GNf07bK4h_Pb65OC6_MmjOYBn3a563-F3ODcnsWpa_jpokE3JQvUx_EZnpBTy8eSnpmy_-CG8n7K_2rHiDmbPkFkupR0I8h4_VmBPaN6imykQPOdl-AltwpfYD-VL0BLVZ35fGfz23KBPvVD0UjNC1uqUTDVF5pQjo6byRcOqgmYyCea8">
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Biryani Special Deal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Portion of spiced chicken biryani with mint zeera raita.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 348.50</span>
+<button aria-label="Add Biryani Deal to cart" class="add-to-cart-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors flex items-center justify-center" data-dish="Biryani Deal" data-price="348.50">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Chicken Biryani -->
+<div class="min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between p-space-sm snap-start group">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-sm text-label-sm backdrop-blur">Classic</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dum cooked chicken biryani garnished with fried onions, chopped fresh mint, coriander leaves, and saffron streaks on a dark ceramic platter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2kfbFmsuv3RcLsNaXFLudUic7poFWKyyLn2lFm2XmOxVSGFWbAL-0v5l0mYZSuHjyrdkbgh8KFK8-jfVe3LAF3mtqRPmdUeTyf8d3a-DxFApYjYsxr1ygioCD6lHcckUPTOLsMZCuuCOpzh3QlYNVTMnpot8G5HUZsrkCDEdsIvyr9GtD-V3cEA2cVDu5aE0qFwNxx96TXtbckEPxZU6ioVm_8T9ntnuVfp8Dr7MOVythh7Nhb7g6">
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Chicken Biryani Regular</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Authentic Faisalabad spicy dum rice with tender bone-in chicken.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 357</span>
+<button aria-label="Add Biryani to cart" class="add-to-cart-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors flex items-center justify-center" data-dish="Chicken Biryani Regular" data-price="357">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Zinger Burger -->
+<div class="min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between p-space-sm snap-start group">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">Hot &amp; Spicy</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crispy golden fried zinger burger breast fillet topped with spicy secret sauce, crunchy cabbage and pickled cucumbers on a soft bun on dark slate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Yqdtbkps3OWS11glhVAO80kWL2g9Itw6fUCT1WGRW6kUsNIIvZzuBZ2aiJY3fmFPMRKwVrL544iHaS0oh9Wip3XaA4KlGWulIwwRZcFEPbyjNKphfuquKCz7XaHaamjaHrDZDmTbK2B4Up4DB4S1uc4foH6YWCVZw9TjmwtmCHlNmh7DToJ2XTj9fbvQOtGu3Gn2zQzUD2wXsafcGGdyfJ8qYLtCNcP9KCaYdFL1SCz1xXxq5iz6">
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Crispy Zinger Burger</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Ultra-crunchy fried fillet seasoned with our signature 12-spice rub.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 357</span>
+<button aria-label="Add Zinger Burger to cart" class="add-to-cart-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors flex items-center justify-center" data-dish="Crispy Zinger Burger" data-price="357">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Russian Salad -->
+<div class="min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between p-space-sm snap-start group">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-sm text-label-sm backdrop-blur">Chilled Side</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Creamy Russian salad made with diced apples, pineapples, sweet peas, and creamy mayonnaise dressing in an elegant glass bowl on a dark wooden counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARZhRX3iWzbWH-WtkS8yxetj-JG6-5xns6XctF8neO9CqECMag4q6hXfuS3S-hogusZS4lTGxL2UPx-xbOtOSTDz3_YGiWkBXC8rIoK4EeII7ircyqb-UxoXRMNGArtWe95cXNyYaKOCf4An0eCcVulVxDiRafT48QF1OiRmfF8GFEKLhpKSjs7eM0bOuE0Kfg8gKnhcswg6ce-7R29sG-X-aNzAgjqSdGfcavfN2zc891nGVdh0NV">
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Special Russian Salad</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Velvety cream dressing tossed with apples, potatoes, peas and pineapple.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 229.50</span>
+<button aria-label="Add Russian Salad to cart" class="add-to-cart-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors flex items-center justify-center" data-dish="Special Russian Salad" data-price="229.50">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 6: Cream Fruit Chaat -->
+<div class="min-w-[280px] sm:min-w-[310px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between p-space-sm snap-start group">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-sm text-label-sm backdrop-blur">Sweet Treat</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luscious Pakistani cream fruit chaat loaded with seasonal fruits, bananas, apples, and crushed almonds with sweet dairy cream in an amber glass dessert bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM9gKgPrFQiNGh5qGj1Tt8VgCQiEXarf0xaegXdIU6xYSluyi8v3Vqe-O0Na8Wg-m6NvyAsWCCs8Uy8Evzw0SKB8nb7M1nHJJ3VMWxACfRoJnuFfEfGkFXZz3ZTx7lv4UrkzI55VRU0UJ-cN3j3zd5zGnYwsSEagFcxq5Fq6ZiGFy4ZHn7kvXhx-MiSDkCkIk3YyzwU18bAckNbLfYTLvbKJiCUb1shomWuwypJe9wsp8bQaUUiP3l">
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cream Fruit Chaat</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Rich dairy cream folded with bananas, apples, raisins, and roasted almonds.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-title-lg text-title-lg text-secondary font-bold">Rs. 297.50</span>
+<button aria-label="Add Cream Fruit Chaat to cart" class="add-to-cart-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors flex items-center justify-center" data-dish="Cream Fruit Chaat" data-price="297.50">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SPOTLIGHT SECTION: A-ONE SUPREME PIZZA -->
+<section class="w-full bg-surface-container-low py-space-xl relative overflow-hidden">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-container rounded-2xl border border-outline-variant/40 p-space-md md:p-space-xl relative overflow-hidden shadow-2xl">
+<!-- Background Radial Flame Glow -->
+<div class="absolute -right-20 -bottom-20 w-[450px] h-[450px] bg-primary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high border border-outline-variant/50 w-fit">
+<span class="material-symbols-outlined text-secondary text-[16px]">local_pizza</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">Signature Showcase</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              A-One Supreme Pizza
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Hand-tossed golden crust layered with secret marinara, melting mozzarella cheese pull, charred spicy chicken tikka cubes, sliced black Spanish olives, crispy bell peppers, and roasted mushrooms.
+            </p>
+<!-- Size Selectors & Pricing -->
+<div class="flex flex-wrap items-baseline gap-space-md pt-space-xs">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Starting from</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">Rs. 467.50</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface font-label-md text-label-md">Small (Rs. 467.50)</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-md text-label-md">Medium (Rs. 890)</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-md text-label-md">Large (Rs. 1,250)</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-title-md text-title-md hover:bg-primary-fixed-dim transition-colors shadow-lg" href="https://wa.me/923001234567?text=I%20want%20to%20order%20the%20A-One%20Supreme%20Pizza" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">local_pizza</span>
+<span class="">Order Supreme Pizza</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-surface-variant">✨ Extra Cheese Burst Available</span>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="relative w-full h-[320px] sm:h-[400px] rounded-xl overflow-hidden border border-outline-variant/40 shadow-xl group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Cinematic close-up of supreme pizza slice being lifted with long gooey strands of melted mozzarella cheese pull, loaded with chicken chunks, black olives and green capsicum against dark roasted slate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADub1G5DHZN1cCb0oGzaW4fN6C2RA-TjgO0h4IjrRlCMsIeiyC6C7tYLk5hkGrLq_nkpiLgZ51wImT_Z-omkgTIX2ypC39qhA2EJHoj6Jkj10RGSt5VjtVLTOpSrhENrKXFBYk8X9j42MwWrnjOIGKa523-pXgyWPfpnFA59HRpZ0CFs-LEU3rYksppvd0Jy5kuyuGLySiJncpIIFgBWNCuvnpTfCtfSKwmMLaIgh-Y5QfUabI607-">
+<div class="absolute bottom-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md border border-outline-variant/30 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase">Fresh Dough Made Hourly</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPLORE CATEGORIES GRID -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Curated Dining</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">Explore Menu Categories</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">From midnight street cravings to traditional confectioneries, crafted to perfection.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter"><!-- Cat 1: Rice Specialties -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary-container/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#quick-menu">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Rice Specialties" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Unu6JZpY8GhUq8Pa79iPvRz2VvmeWnyHuMKxQ_sT_NA75-q8ZvKG6E5gMrCozenJqgwoE07L-MHySrrEPCXgSJF1sk8NdDxjd9z8cISKXBRV_5IZOkZzVcOxwW0RQpiaSIjJYK1jR70MAfwwodT-ATZb9MXPG0o77v-ZM5RiqnRinLnEDbs3-LIka55fY_cNVjueAwcWck4OjUSPWZnOJJl8b9OcxbW6trtaRUXUBOMLAmeWxcXPBqAdk">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors font-semibold">Rice Specialties</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dum Biryani, Yakhni Pulao, Egg Fried Rice</p>
+    </div>
+    <div class="flex items-center gap-1 text-primary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 2: Handcrafted Pizza -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#quick-menu">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Handcrafted Pizza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XSkN5wh1YthcOFkZ_Al49cJ4pruXMcDZ2YRJrbvRQpqo19fRNZbE_cCpIQwZ54XGKMtJKM66FNtTojhs-tJ8r7Q6r98__QbikYUMKopOF_XmjUF7dePUZ7z1lTjQkiGIPHpNxt8Co7evLBq8go7lBIYWThZ7l8HE0yO9INQ9m7OGYAI_DwktbpxH8seFscl666CESy3hBEQPX_OHpNEOMOrl2IRfsjoTjkyQ7UtvwKHIclWKMMWWbyKg">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors font-semibold">Handcrafted Pizza</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tikka, Fajita, Supreme &amp; Cheese Stuffed Crust</p>
+    </div>
+    <div class="flex items-center gap-1 text-secondary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 3: Gourmet Burgers -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary-container/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#quick-menu">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Burgers &amp; Sandwiches" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VVSOZCPPa8_KoM7xywDT3VvNSohT9DFu3ymC8UgzLivclBVwXptKiWFiVX_dbvHcmI2sPPIQY96yz_OWxxtIrhIieiTdp_-Zu276evri3ukZmfdzuWxJiBTYdfCiCNSYnscG1JZ3FPweqWf9XA9hqtLdEWOxJgS3qhdjd-H_qpvAlla053GqT4tHnNQQ4md3o2m2PsyOB35nPI3f8CfcFX-s37qy4rZV4R_9wzqWAstu842cbLc_aPPlU">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors font-semibold">Burgers &amp; Sandwiches</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Mega Zingers, Beef Patty &amp; Club Sandwiches</p>
+    </div>
+    <div class="flex items-center gap-1 text-primary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 4: Wraps & Shawarmas -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#quick-menu">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Wraps &amp; Shawarmas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VDlNzS5DbrPiewdGmgPjG18Ni0b7Abs5aRA6MaVSuVdApao-4_DlFQa01KBeeo0kY21rBrSQO2yUsYm2Vt5Q5Z2oWxK1rokwlA-T7BIra1VoENtnKoEzmIRxGYmGyZhZ3HIMWgn0x7GwmGer1nb-t041ve0ixAreQ_YbSgKi-oICZfamOG24lK2O-n3ainvANi7GCGnpLjxEpvtYGpqPLG2Ar5Sw5rgI7r-ke8e4zlvFOhatzn5L2zZi8">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors font-semibold">Wraps &amp; Shawarmas</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Crispy Paratha Roll, Lebanese Shawarma</p>
+    </div>
+    <div class="flex items-center gap-1 text-secondary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 5: Broast & Fried Sides -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary-container/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#quick-menu">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Broast &amp; Fried Sides" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Vhfx5er1jie-DfhlB0piuB6bgJOr5QzQ8An1Vly-V3EL_-vrQ-4YIWytR6pDbadJNj9heLjEw4Lrd6hemGdFk80A70EaJrHG5llVjBdOy7Vaba0I4LpDr7cUu6dh3CavTlti4oC_nA5ho9YaultCW2WXhLeV2UcRa547NP0TBH0iNnEU1ZDo4oNZfJJq5lx_jHoT3eisU_asAFrMG_rttMihBaMH4-qtVIwyZVrFwFWpzeprorIqTtrA">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors font-semibold">Broast &amp; Fried Sides</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Golden Chicken Broast, Crinkle Masala Fries</p>
+    </div>
+    <div class="flex items-center gap-1 text-primary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 6: Fresh Milkshakes -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#quick-menu">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Fresh Milkshakes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UGChQJz0GUSxGe2I2j2vnShAHz8qsEjpL8Ps1GUcj-_1TfU8dHVOZAHWG1iinScxedFVFzGfDYoTxyl-BqnX13u7npxZjUy9cBnHNTpv4D7H-PeSA2SLbDzLxNX8suFAUB2pKchjF3J3-4LEDBG6i2VHnk3HvV9Vaq5kLaDcC-3nviVLCEz33-DppEJXBykn00-OrUJyFXEcwzHP6J7Glc-3kyAToP0yLFkc5L-gsoebBYmM5H14YpKQk">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors font-semibold">Fresh Milkshakes</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Oreo Shakes, Mango Bliss, Dry Fruit Chillers</p>
+    </div>
+    <div class="flex items-center gap-1 text-secondary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 7: Artisanal Cakes -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary-container/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#catering-section">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Artisanal Cakes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XIevxuqQJyUugEZZCDOze6Zfrl_jJc1geAd8ize90H5ub4hNuxuonNA9BRq6bmRKpceqOyhXfb31zLRBCnkoSG_5_ErdzrMOP6a9NPc6bLAsPOxwwGGFRuNHpk2qq_ZpTzc2T-zx1wxPIzpxqqa57B6d2GTYmQFvCKVKWbYWor4g33VA0OtgdIPvR4W8HEM-PCiloScNTusnZcd0Lvx067K1IcJxj7gM5Tqy1R38R4d7WjrMq8gY-Ygw">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors font-semibold">Artisanal Cakes</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Snickers, Kit Kat, Dairy Milk Chocolate Cakes</p>
+    </div>
+    <div class="flex items-center gap-1 text-primary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 8: Traditional Sweets -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#catering-section">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Traditional Sweets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VFG1glPklwlnHnolQJaQyIxT6s5e4zqvYWBECE0jtEz8U-kNSlkZXLahi0nRfjsI1otQAiSABeaBcXKjQSvqyVvRRUiinxQM1Hu7rTiT3XzYmiib58PiL8xF3o0Mth__ZkAAde9siJgwkhxYBE4iA35IC_mU5M6ojUbWywO1tOwO5MlGfRlyXoHTgRhim8TW50tOKN0BY8GVlHNo_8nNwy_pTXb5ILWCssrPfrBQnUr1af6eklJ__2uA">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors font-semibold">Traditional Sweets</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pure Desi Ghee Gulab Jamun, Barfi, Rasgulla</p>
+    </div>
+    <div class="flex items-center gap-1 text-secondary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a>
+
+<!-- Cat 9: Desserts & Savouries -->
+<a class="group bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary-container/60 transition-all duration-300 hover:-translate-y-1 flex flex-col shadow-md" href="#quick-menu">
+  <div class="relative h-44 w-full overflow-hidden bg-surface-container-lowest">
+    <img alt="Desserts &amp; Savouries" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WxZduP--bQpKLoz9ppIvCnG5g0RJZeNfwyq4KmaEObX7T7PofJSWMRxxofcnRDf_Kg9gzVcPHbtiyBvsmP149vNGyKkfdV86BwSSqOg82b8RqqEqVl-1ao5954w1f8W9WakNALquA53Wwh3Igze4fusvG0chTisnn8t6sS3EV6ydVFEjFqBTXtHY4ANO7_WoBnSgCqWh3MGAeKtGmsSZcoSHOG0Zcvw8jSTpIg8TkgZ7Jl-bkicjDpIM4">
+  </div>
+  <div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+    <div>
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors font-semibold">Desserts &amp; Savouries</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Russian Salad, Cream Chaat, Crispy Samosas</p>
+    </div>
+    <div class="flex items-center gap-1 text-primary font-label-md text-label-md font-semibold pt-space-xs">
+      <span class="">Explore Dishes</span>
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    </div>
+  </div>
+</a></div>
+</div>
+</section>
+<!-- CELEBRATIONS & CATERING BANNER (CAKES & SWEETS) -->
+<section class="w-full bg-surface-container-lowest py-space-xl relative border-y border-outline-variant/30" id="catering-section">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="rounded-2xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high p-space-md md:p-space-xl border border-secondary/20 shadow-xl relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Festive &amp; Family Celebrations</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              Artisan Cakes &amp; Traditional Mithai
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Make birthdays, weddings, and milestones unforgettable. Fresh custom designer chocolate cakes infused with Snickers, Kit Kat, and Dairy Milk, alongside pristine 1KG gift hampers of warm Gulab Jamun, Cham Cham, and creamy Barfi.
+            </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="">Pure Desi Ghee</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">cake</span>
+<span class="">Custom Fondant Art</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">inventory_2</span>
+<span class="">Luxury Velvet Gift Boxes</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-secondary text-on-secondary font-title-md text-title-md hover:bg-secondary-fixed transition-colors shadow-md" href="https://wa.me/923001234567?text=Hi,%20I%20want%20to%20inquire%20about%20Custom%20Cakes%20and%20Sweets%20Catering" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">card_giftcard</span>
+<span class="">Book Cakes &amp; Mithai Boxes</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 grid grid-cols-2 gap-space-sm">
+<div class="h-44 rounded-xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Rich chocolate drip birthday cake topped with Kit Kat wafer bars and chocolate flakes on an ornate dark cake stand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzz8PbpiRJBAeowOxPLECdv73veVEMR1XvOTz-mhrV8zZoYBexyhsZOQBBfm8ZIIKhxiMeYJ3jdWXP9ujH3NFhFLMSfEp5ScpHkLcSYitYOa3Y_C-DfHATrKeSqbu1Afzkudvsm2-B-cZYFCkV2uGJBN2AF0OB9zjIWTmblKNrPMpOO6ClctwN-v_dy23ovH1TLM6AvWizFWfHEbjNDbDfh9ej7l4jl10oVROgBkO9RcIMdnYn2L-K">
+</div>
+<div class="h-44 rounded-xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Traditional Pakistani golden gulab jamun soaked in cardamom syrup and garnished with silver leaf and sliced pistachios in an artisanal bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiCC2-ufeXl4ZsT0xdiybMp-t36T9v5GrF-6Cy3E5JQONK-Tk2pSf8-ASMAh6Fa_-Kw2JTbUjnZ7oKlzEqfYJF4lu4hi1I7p4QSp1_2Pz_g0ntCvwS7uhb_BQJHGRvQP2fElsYe4r789KoM7DCPg1_fEoGslqx-yCYR6nHgVhKyqYHsFhBbFKFOoy2uuDtMKMcPkywscn4rKNKjLmCRoBNb9WcUaoEDGLIKbmPIJARMeEvFhqs8wgl">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CUSTOMER TESTIMONIALS & PHOTO GALLERY -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Community Love</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">What Faisalabad Foodies Say</h2>
+</div>
+<div class="inline-flex items-center gap-space-xs text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">reviews</span>
+<span class="">Google Rating: 4.9 Stars over 1,200+ Reviews</span>
+</div>
+</div>
+<!-- Testimonials Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-high p-space-md rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center text-secondary text-sm">
+              ★★★★★
+            </div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "The Zinger Burger at A-One is unrivaled in Faisalabad. The crunch stays crispy even when delivered at 2:30 AM! Truly living up to the slogan."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-sm">
+              HK
+            </div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Hamza Khan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Civil Lines, Faisalabad</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-high p-space-md rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center text-secondary text-sm">
+              ★★★★★
+            </div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Their Dum Chicken Biryani has that authentic royal aroma with zero excessive grease. We order their family platters every Friday without fail."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-sm">
+              AA
+            </div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Ayesha Anwar</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">D-Ground, Faisalabad</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-high p-space-md rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center text-secondary text-sm">
+              ★★★★★
+            </div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Ordered a custom Kit Kat birthday cake with traditional Barfi gift packs. The presentation and freshness blew everyone away."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold text-sm">
+              MS
+            </div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">M. Shahzaib</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kohinoor City</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Culinary Photo Mosaic -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="h-48 rounded-xl overflow-hidden border border-outline-variant/25">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Overhead aesthetic top-down flat lay shot of aromatic chicken pulao rice garnished with brown onions and spices on dark rustic wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALn9SVdsJq01ivyEOT_MVS9cRpVMOQpbrZ7rXT6MAFBJCxqPndDxrFTbxVzyt0o8-U3sbGREKo6OYU2D7wnISADxApHTqSVZkzonoILV31SDJskiJ_SSVBq4hMHLq1_-Fs_Hw8nv7FMU52l1wADVuS-iLBXh38jNUzMWAWKPvfiElI0XulW6Wb1Ud7imuTOXXJVzZzNnuF23zR5noIHEdR4TqBnyFVhG0zII2D0qFtN9vI1hs1Gw2h">
+</div>
+<div class="h-48 rounded-xl overflow-hidden border border-outline-variant/25">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Close-up of golden crunchy spicy chicken broast pieces served with garlic mayonnaise dip in ambient charcoal restaurant setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSNpPQW966pK5-rkuh5325WIMOY0ade41H6ucjA-sEROLbHRHQEe5yKRXWjS7FsnCP5NDlX1BDhKOBZ-KcciMPH0Ckp3AbAzuXbnZIRGFL_Xs5FWsWaYbt6LOYlvZ_1YfZe9-X2fzcY1Ogyvw7k3STSCfHeJCqxccgA8A2WgYoEQ9iQVBzAH0_ZNDBB-mQPNHOSTLRTwyxQlat6fWOcs8m78Ntt9mV5K6Hyk90kcjE4gYpZRj3cavy">
+</div>
+<div class="h-48 rounded-xl overflow-hidden border border-outline-variant/25">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Freshly baked hot chicken tikka pizza with char-grilled chicken chunks, capsicum and herbs under warm tungsten illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwRpmmQOUjCCPLpPkX-rw_I0fCArNUmpjMpO2bg2az9E44ioaVwXZ0_YtXYimfkeijvaS-EA0wKEq29MC61P7soqKmlRba8ijbAfsdUavqAhAHP3f5fkDt0Wubccg50z85DWDAM4olq--0CXtXOFDsniZADRpEPTf49fXimbikcbl7PFZ-8gWH41YFJ-LHowHYIAy2-9SstuWlFVppFxs_WSDqL1mcURZRizp77Yz1cE7IenKUU7nZ">
+</div>
+<div class="h-48 rounded-xl overflow-hidden border border-outline-variant/25">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="An assortment of colorful traditional Pakistani sweets and mithai including gulab jamun, barfi, and cham cham neatly arranged on a luxury platter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL9szrIY6kq_cBY_lg2huNnCuNDG0IWIkAWLYtfHprbwD0C1D7KW5zqfH-oESP9tfuGpaSxseb8toMfhRB6df5EEYQond0Kt4nX0m7N52knHMzpHbzU9jXC8MWfK_DlGzEtlHyGzHsmFrhUX-wxNqp3ytd6xoVWIifjtYOjcBK54BoaflbisgAc6DIb1Hxg3SQW0B-wVY7Q9E-N5iC_0Sh1wGdmm95FhNR2u5HN-YBa_yPFRvqKH10">
+</div>
+</div>
+</div>
+</section>
+<!-- VISIT US / LOCATION & CONTACT SECTION -->
+<section class="w-full bg-surface-container-lowest py-space-xl border-t border-outline-variant/30">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-container rounded-2xl border border-outline-variant/40 overflow-hidden shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Info Column -->
+<div class="lg:col-span-5 p-space-md md:p-space-xl flex flex-col justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Dine In • Takeaway • Delivery</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">Visit Flagship Store</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Experience our cozy late-night dining atmosphere or swing by for quick curb-side pickup in Faisalabad.
+              </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px] mt-0.5">location_on</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Main Boulevard Location</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Near D-Ground Commercial Zone, Faisalabad, Punjab, Pakistan</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">schedule</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Working Hours</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monday – Sunday: 11:00 AM – 3:00 AM Midnight</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">phone_iphone</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Instant WhatsApp Hotline</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">+92 300 1234567 / +92 41 8765432</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface border border-outline-variant/40 font-title-md text-title-md transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span class="">Get Directions</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim transition-colors font-title-md text-title-md shadow-md" href="https://wa.me/923001234567" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">Chat to Order</span>
+</a>
+</div>
+</div>
+<!-- Right Map Column -->
+<div class="lg:col-span-7 min-h-[340px] lg:min-h-full relative bg-surface-container-high">
+<div class="w-full h-full min-h-[320px] bg-cover bg-center" data-location="Faisalabad, Pakistan" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAzVblW4NKDrauK2mog7fFJwH9cE2QDRbj2Y29Gdg1M98BCot9vruLPs342jJEBu84XAv6qedmxrMDaI5oCJb54EeR0McbnpSq9ZUs5TvXGTXfYe_LSn1FO4f6-mvZ8H0JaAigCoIQ1MzkYfr2g9PeifveSBHOBTgb_CZJQmDDAZHpXkXswLxYf0ZFvbI7SEu8BvX4tWaNQSw6LNeM2hQqTy7VXzggYxWYHkREGYoEdQCAOmfZuhejl&quot;);">
+</div>
+<!-- Map Overlay Card -->
+<div class="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-xs p-space-sm rounded-xl bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/40 shadow-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary animate-ping"></span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Kitchen Operational Now</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Average delivery time: 25 - 35 mins across Faisalabad city limits.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE TOAST NOTIFICATION FOR CART (Microinteraction) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="cartToast">
+<div class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary-container shadow-2xl border border-primary-fixed/40">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-title-md text-title-md font-semibold" id="toastMessage">Item added to your bag!</span>
+</div>
+</div>
+<script>
+    // Horizontal Carousel Scroll Controls
+    const carouselTrack = document.getElementById('carouselTrack');
+    const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+    const scrollRightBtn = document.getElementById('scrollRightBtn');
+
+    if (carouselTrack && scrollLeftBtn && scrollRightBtn) {
+      scrollLeftBtn.addEventListener('click', () => {
+        carouselTrack.scrollBy({ left: -320, behavior: 'smooth' });
+      });
+      scrollRightBtn.addEventListener('click', () => {
+        carouselTrack.scrollBy({ left: 320, behavior: 'smooth' });
+      });
+    }
+
+    // Micro-interaction: Add-to-cart Toast
+    const addBtns = document.querySelectorAll('.add-to-cart-btn');
+    const toast = document.getElementById('cartToast');
+    const toastMessage = document.getElementById('toastMessage');
+    let toastTimeout;
+
+    addBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const dish = btn.getAttribute('data-dish') || 'Item';
+        const price = btn.getAttribute('data-price') || '';
+        
+        if (toastMessage) {
+          toastMessage.textContent = `${dish} (Rs. ${price}) added to bag!`;
+        }
+
+        if (toast) {
+          clearTimeout(toastTimeout);
+          toast.classList.remove('translate-y-20', 'opacity-0');
+          toast.classList.add('translate-y-0', 'opacity-100');
+
+          toastTimeout = setTimeout(() => {
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('translate-y-20', 'opacity-0');
+          }, 2400);
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><a href="home.html" aria-label="A-One Foods — Go to Home page" class="flex items-center gap-space-sm rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-container"><img alt="A-One Foods Chicken Emblem.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WjwaRNskSPd1Vee3XlamUkuvRA7eCM6xjSE-lSbDjKrBt_dIW6ojGS_2ytbTCpi9gMYaxyB7E_97tu0dw1V-NAzXelPCyv8j1a6-4ycNLsfsD1Xvxy4iskNixCjRYttT7TBW0KaTjaPR02X5oPrReLkdx_fFZPH1jXQobVG2XIvaQq0zUq14VJMMyTCdZo0bX944furweGu9psgUj8Np3OsdEGmgixBQJoDn5Jf9ffqvWSsbGKpmtr3M0ibYZ9FidBWzoMYaOvLQ"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">A-One Foods</span></a></div><p class="font-headline-sm text-headline-sm text-secondary italic">"When You Want To Eat"</p><p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Crafting unforgettable nocturnal culinary experiences in Faisalabad with hand-roasted spices, golden crispy chicken, and artisan confectioneries.</p><div class="inline-flex items-center gap-space-xs mt-space-sm px-space-sm py-space-xs rounded bg-surface-container-high border border-outline-variant/40 w-fit"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">100% Halal Certified</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Quick Links</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md"><a class="hover:text-primary transition-colors" href="fullmenu.html">Chef's Signature Menu</a></li><li class="font-body-md text-body-md"><a class="hover:text-primary transition-colors" href="fullmenu.html">Exclusive Family Deals</a></li><li class="font-body-md text-body-md"><a class="hover:text-primary transition-colors" href="fullmenu.html#section-cakes-sweets">Artisan Cakes &amp; Sweets</a></li><li class="font-body-md text-body-md"><a class="hover:text-primary transition-colors" href="about.html">Our Heritage &amp; Craft</a></li><li class="font-body-md text-body-md"><a class="hover:text-primary transition-colors" href="contact.html">Direct Support &amp; Inquiries</a></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Visit &amp; Timing</h4><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span><div><p class="font-title-md text-title-md text-on-surface">Store Timings</p><p class="font-body-md text-body-md text-on-surface-variant">Open Daily: 11:00 AM – 3:00 AM</p><p class="font-body-sm text-body-sm text-secondary">Late Night Takeaway &amp; Delivery</p></div></div><div class="flex items-start gap-space-xs mt-space-xs"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span><div><p class="font-title-md text-title-md text-on-surface">Flagship Location</p><p class="font-body-md text-body-md text-on-surface-variant">Main Boulevard, Faisalabad, Pakistan</p></div></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Ordering Hotline</h4><p class="font-body-md text-body-md text-on-surface-variant">Instant dispatch and bespoke catering orders via WhatsApp hotline.</p><a class="inline-flex items-center gap-space-xs text-primary font-title-lg text-title-lg hover:underline" href="https://wa.me/"><span class="material-symbols-outlined text-[20px]">call</span><span class="">+92 300 1234567</span></a><div class="mt-space-sm"><p class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-space-xs">Connect With Us</p><div class="flex items-center gap-space-sm"><a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="TikTok" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">music_note</span></a></div></div></div></div><div class="pt-space-md border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 A-One Foods. All rights reserved. Faisalabad, Pakistan.</p><div class="flex flex-wrap items-center justify-center gap-x-space-md gap-y-1 font-body-sm text-body-sm"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">FSSAI &amp; Halal Standards</a></div></div></div></footer>
+
+
+
+<script>
+// Mobile navigation toggle - identical on every page
+(function () {
+  var toggle = document.getElementById('mobileNavToggle');
+  var menu = document.getElementById('mobileNavMenu');
+  var icon = document.getElementById('mobileNavIcon');
+  if (!toggle || !menu) return;
+  function setMenuOpen(open) {
+    menu.classList.toggle('hidden', !open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+    if (icon) icon.textContent = open ? 'close' : 'menu';
+  }
+  toggle.addEventListener('click', function () {
+    setMenuOpen(menu.classList.contains('hidden'));
+  });
+  menu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setMenuOpen(false); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+      setMenuOpen(false);
+      toggle.focus();
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (menu.classList.contains('hidden')) return;
+    if (e.target && e.target.closest && !e.target.closest('header')) setMenuOpen(false);
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 1024) setMenuOpen(false);
+  });
+})();
+</script></body></html>

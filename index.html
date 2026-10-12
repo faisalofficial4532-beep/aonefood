@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>A-One Foods — When You Want To Eat</title>
+<meta content="0; url=home.html" http-equiv="refresh">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #171310; color: #ebe1db; font-family: 'Poppins', 'Inter', sans-serif; }
+  .wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; padding: 2rem; box-sizing: border-box; }
+  .glow { width: 260px; height: 260px; border-radius: 9999px; background: radial-gradient(circle, rgba(242,106,15,0.25) 0%, rgba(23,19,16,0) 70%); filter: blur(40px); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+  .brand { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.01em; position: relative; }
+  .tag { color: #e9b44c; font-style: italic; font-weight: 500; position: relative; }
+  .cta { position: relative; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; padding: 0.65rem 1.5rem; border-radius: 0.5rem; background: #f26a0f; color: #fff6ec; font-weight: 600; text-decoration: none; box-shadow: 0 8px 24px rgba(242,106,15,0.35); transition: background 0.2s ease; }
+  .cta:hover { background: #ff8a1f; }
+  .hint { color: #a8988c; font-size: 0.85rem; position: relative; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="brand">A-One Foods</div>
+  <div class="tag">"When You Want To Eat"</div>
+  <p class="hint">Opening the restaurant homepage…</p>
+  <a class="cta" href="home.html">Enter A-One Foods →</a>
+</div>
+<script>
+  // Instant redirect to the homepage content (no duplicated page content).
+  window.location.replace('home.html');
+</script>
+</body>
+</html>
